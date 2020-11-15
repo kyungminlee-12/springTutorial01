@@ -1,0 +1,32 @@
+<?xml version="1.0"encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupld>sp5</groupld>
+    <artifactld>sp5-chap02</artifactld>  <!--프로젝트의 식별자 지정, 프로잭트 폴더 이름 사용하기도 한다 -->
+    <version>0.0.1-SNAPSHOT</version>
+
+    <dependencies>
+      <dependency>   <!-- 프로젝트에서  5.0.2.RELEASE 버전의 spring-context 모듈 사용 지정-->
+        <groupld>org.springframework</groupld>
+        <artifactld>spring-context</artifactld> <!--의존을 추가:자바 app에서 클래스 패스에 spring-context 모듈 추가-->
+        <version>5.0.2.RELEASE</version>
+      </dependency>
+    </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>   <!-- 1.8 버전을 기준으로 자바 소스를 컴파일하고 결과 클래스를 생성한다. -->
+          <artifactld>maven-compiler-plugin</artifactld>
+          <version>3.7.0</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+            <encoding>utf-8</encoding>  <!-- (자바 컴파일러)소스 코드를 읽을 때 사용 인코딩: UTF-8로 설정  -->
+          </configuration>
+        </plugin>
+      </build>
+
+</project>
