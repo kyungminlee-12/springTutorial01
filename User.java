@@ -1,5 +1,6 @@
 package user;
 
+//사용자 데이터 페키지 
 public class User {
 	
 	private String userID;
